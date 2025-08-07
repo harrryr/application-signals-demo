@@ -9,7 +9,7 @@ information to effectively respond to your bug report or contribution.d
 fsd
 ## Reporting Bugs/Feature Requests
 dfsdf
-We welcome you to use the GitHub issue tracker to report bugs or suggest features.
+We welcome you to use the GitHub issue tracker to report bugs or suggest features.zxc
 sdf
 When filing an issue, please check existing open, or recently closed, issues to make surdsfe somebody else hasn't already
 reported the issue. Please try to include as muchsf information as you can. Details like these are incredibly useful:
