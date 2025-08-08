@@ -18,5 +18,8 @@ npm run build
 cdk bootstrap
 
 # Deploy the stack
+cdk deploy --require-approval never
+
+
 
 echo "Deployment completed successfully!"
