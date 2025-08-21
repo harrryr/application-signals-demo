@@ -20,7 +20,7 @@ cdk bootstrap
 cdk synth
 
 # Deploy the stack
-cdk deploy --require-approval never
+cdk deploy --require-approval never --region ca-central-1
 
 
 
