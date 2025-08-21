@@ -17,6 +17,8 @@ npm run build
 # Bootstrap CDK (only needed once per account/region)
 cdk bootstrap
 
+cdk synth
+
 # Deploy the stack
 cdk deploy --require-approval never
 
