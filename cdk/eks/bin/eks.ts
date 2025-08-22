@@ -50,7 +50,7 @@ const knowledgeBaseStack = new KnowledgeBaseStack(app, 'AppSignalsKnowledgeBaseS
 const guardrailStack = new GuardrailStack(app, 'AppSignalsGuardrailStack')
 
 // Add Resource Explorer Stack to enable AWS Resource Explorer
-// const resourceExplorerStack = new ResourceExplorerStack(app, 'AppSignalsResourceExplorerStack')
+const resourceExplorerStack = new ResourceExplorerStack(app, 'AppSignalsResourceExplorerStack')
 
 const eksStack = new EksStack(app, 'AppSignalsEksClusterStack', {
   vpc: networkStack.vpc,
