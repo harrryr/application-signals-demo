@@ -69,7 +69,7 @@ export class LambdaPetClinicStack extends cdk.Stack {
     };
 
     // Get current region and corresponding layer ARN
-    const regionName = cdk.Stack.of(this).region;
+    const regionName = this.region;
     const layerArn = layerArns[regionName] || layerArns['us-east-1']; // Default to us-east-1 if not found
     const otelLayer = lambda.LayerVersion.fromLayerVersionArn(this, 'OpenTelemetryLayer', layerArn);
 
