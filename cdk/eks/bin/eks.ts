@@ -75,7 +75,7 @@ eksStack.addDependency(transactionSearchStack); // Add dependency on Transaction
 eksStack.addDependency(applicationSignalsStack); // Add dependency on Application Signals Stack
 eksStack.addDependency(knowledgeBaseStack); // Add dependency on Knowledge Base Stack
 eksStack.addDependency(guardrailStack); // Add dependency on Guardrail Stack
-// eksStack.addDependency(resourceExplorerStack); // Add dependency on resource explorer
+eksStack.addDependency(resourceExplorerStack); // Add dependency on resource explorer
 
 const syntheticCanaryStack = new SyntheticCanaryStack(app, 'AppSignalsSyntheticCanaryStack', {
   vpc: networkStack.vpc,
