@@ -58,6 +58,18 @@ fi
 
 # Deploy or destroy all stacks in the app
 if [[ "$ACTION" == "deploy" ]]; then
+  # The SLO requires metrics from lambda pet clinic.
+  echo "HELLO"
+  cd ../../../lambda-petclinic/cdk
+  pwd
+  if ./deploy.sh; then
+    echo "Lambda pet clinic was deployed successfully"
+  else
+    echo "Lambda pet clinic deployment failed"
+    ./destroy.sh
+    exit 1
+  fi
+  cd ../../cdk/eks/lib
 
   # update vets service config to use the otlp collector when use-otlp is true
   MANIFEST_FILE="./lib/manifests/sample-app/vets-service-deployment.yaml"
