@@ -21,3 +21,4 @@ cdk bootstrap
 cdk deploy --require-approval never
 
 echo "Deployment completed successfully!"
+exit 0
