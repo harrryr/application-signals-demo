@@ -70,7 +70,8 @@ if [[ "$ACTION" == "deploy" ]]; then
     exit 1
   fi
   pwd
-  cd ../../cdk/eks/lib
+  cd ../../cdk/eks
+  pwd
 
   # update vets service config to use the otlp collector when use-otlp is true
   MANIFEST_FILE="./lib/manifests/sample-app/vets-service-deployment.yaml"
