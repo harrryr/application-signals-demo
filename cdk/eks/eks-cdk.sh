@@ -60,7 +60,7 @@ fi
 if [[ "$ACTION" == "deploy" ]]; then
   # The SLO requires metrics from lambda pet clinic.
   echo "HELLO"
-  cd ../../../lambda-petclinic/cdk
+  cd ../../lambda-petclinic/cdk
   pwd
   if ./deploy.sh; then
     echo "Lambda pet clinic was deployed successfully"
@@ -69,6 +69,7 @@ if [[ "$ACTION" == "deploy" ]]; then
     ./destroy.sh
     exit 1
   fi
+  pwd
   cd ../../cdk/eks/lib
 
   # update vets service config to use the otlp collector when use-otlp is true
