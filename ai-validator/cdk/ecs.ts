@@ -102,6 +102,7 @@ export class AIValidatorStack extends cdk.Stack {
         cpu: 4096,
         memoryLimitMiB: 8192,
         taskRole,
+        ephemeralStorageGiB: 40,
       });
 
       taskDef.addContainer(`AITestContainer-${testId}`, {
