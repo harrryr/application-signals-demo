@@ -9,7 +9,6 @@ set -ex
 #   --region        - Optional: AWS region (default: us-east-1)
 #   --function-name - Optional: Lambda function name (default: APM_Demo_Test_Runner)
 #   --create-alarms - Optional: Create CloudWatch alarms (default: false)
-exit 1
 # Examples:
 #   ./deploy_lambda_cdk.sh                               - Deploy Lambda function with default settings
 #   ./deploy_lambda_cdk.sh --region=us-west-2            - Deploy to us-west-2 region
