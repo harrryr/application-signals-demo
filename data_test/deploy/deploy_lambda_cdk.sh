@@ -16,7 +16,7 @@ set -ex
 #   ./deploy_lambda_cdk.sh --operation=destroy           - Destroy the stack
 #   ./deploy_lambda_cdk.sh --function-name=CustomName    - Deploy with custom function name
 #   ./deploy_lambda_cdk.sh --create-alarms=true          - Deploy Lambda function and CloudWatch alarms
-
+exit 1
 # Set default variables
 OPERATION="deploy"
 LAMBDA_FUNCTION_NAME="APM_Demo_Test_Runner"
