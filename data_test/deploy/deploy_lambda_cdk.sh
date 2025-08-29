@@ -1,6 +1,6 @@
 #!/bin/bash
 set -ex
-
+exit 1
 # Script to deploy or destroy AWS CDK Lambda stack and CloudWatch alarms for APM Demo Test Runner
 # Usage: ./deploy_lambda_cdk.sh [--operation=deploy|destroy] [--region=us-east-1] [--function-name=APM_Demo_Test_Runner] [--create-alarms=true|false]
 # 
