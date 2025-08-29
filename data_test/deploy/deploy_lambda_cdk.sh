@@ -4,7 +4,7 @@ set -ex
 # Usage: ./deploy_lambda_cdk.sh [--operation=deploy|destroy] [--region=us-east-1] [--function-name=APM_Demo_Test_Runner] [--create-alarms=true|false]
 # 
 # Parameters:
-#   --operation     - Optional: 'deploy' or 'destroy' (default: deploy)
+#   --operation     - Optional: 'deploy' or 'destroy' (default: deploy)sdf
 #   --region        - Optional: AWS region (default: us-east-1)
 #   --function-name - Optional: Lambda function name (default: APM_Demo_Test_Runner)
 #   --create-alarms - Optional: Create CloudWatch alarms (default: false)
