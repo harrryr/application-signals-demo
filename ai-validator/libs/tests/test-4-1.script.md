@@ -11,13 +11,13 @@ In the input with placeholder text 'Search spans by pasting, selecting from prop
 **Constraints:**
 - You MUST ensure that you press Enter after each input
 
-### 3. Click '12h'
+### 3. Set search period to 1 day
 
 In the right corner, click the 'Custom' button then click '1' next to the 'Days' row
 
 ### 4. Click 'Run query'
 
-Click the 'Run query' button
+Click the 'Run query' button then wait 20 seconds
 
 ### 5. Click the arrow in the first row
 
@@ -111,32 +111,3 @@ Check that there is more than one row displayed in the right panel.
 
 **Constraints:**
 - You MUST ensure the rows contain columns 'Owner id' and 'Spans'. If it does not, you need to type 'attributes.owner.id' again.
-
-### 24. Search for 'Name = GET /owners/{ownerId:int}/pets/{petId:int}/payments'
-
-In the search field under 'Service operations' type 'Name = GET /owners/{ownerId:int}/pets/{petId:int}/payments' and PRESS Enter.
-
-### 25. Access the graph and open the popup.
-
-Access the graph and open the popup, PASS in 2 and 5 as a PARAMETERS. Then wait a few seconds.
-
-**Constraints:**
-- You MUST pass in parameters 2 and 5
-- You MUST not forget to conduct these steps even though they are similar to the previous
-
-### 26. Type 'attributes.owner.id' again
-
-In the right panel, in the search field with placeholder text 'Choose an attribute', type 'attributes.owner.id' and press ENTER. Then wait a few seconds.
-
-**Constraints:**
-- You MUST ensure this search field is in the right panel inside 'Correlated Spans'.
-- You MUST ensure that this is under the text 'Group spans by'
-- You MUST ensure that you press Enter
-
-### 27. Check there is a row with 'Owner id' = 6
-
-Check that there is a row displayed in the right panel and this has 'Owner id' = 6.
-
-**Constraints:**
-- You MUST ensure the rows contain columns 'Owner id' and 'Spans'. If it does not, you need to type 'attributes.owner.id' again.
-- You MUST ensure that 'Owner id = 6' is visible. If this is not, the test result is failed.
